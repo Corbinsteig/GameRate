@@ -12,3 +12,7 @@ button {
     margin: 0px;
 }
 
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

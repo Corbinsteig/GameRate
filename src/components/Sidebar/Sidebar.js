@@ -10,6 +10,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
+import './Sidebar.css'
 import { NavLink } from 'react-router-dom';
 
 
@@ -26,10 +27,10 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink exact to="/" activeClassName="activeClicked">
+            <NavLink to={"/"} exact={true} activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="gamepad">Home</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
+            <NavLink to={"/profile"} exact={true} activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
             </NavLink>
             <LoginButton/>
