@@ -17,7 +17,7 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
 
     return (  
-    <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
+    <div id='sideBar' style={{ display: 'flex', height: '200vh', overflow: 'scroll initial' }}>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -27,10 +27,17 @@ const Sidebar = () => {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink to={"/"} exact={true} activeClassName="activeClicked">
+            <NavLink to={"/"} exact={true}
+             activeClassName="activeClicked"
+             style={({ isActive }) => 
+                      (isActive ? {color: 'lightblue'} : {color: 'white'})}
+             >
               <CDBSidebarMenuItem icon="gamepad">Home</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink to={"/profile"} exact={true} activeClassName="activeClicked">
+            <NavLink to={"/profile"} exact={true} 
+            activeClassName="activeClicked"
+            style={({ isActive }) => 
+                      (isActive ? {color: 'lightblue'} : {color: 'white'})}>
               <CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
             </NavLink>
             <LoginButton/>

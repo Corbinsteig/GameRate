@@ -1,10 +1,11 @@
 import React from 'react'
+import Post from '../components/Post/Post'
 
 const Home = () => {
   return (
-    <div>
-        <h1>HomePage</h1>
-        </div>
+    <section classname="App__content">
+      <Post/>
+        </section>
   )
 }
 

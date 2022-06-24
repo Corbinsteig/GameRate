@@ -1,3 +1,10 @@
 .activeClicked:hover{
     background-color: white;
 }
+
+#sideBar{
+    position: absolute;
+    height: 200%;
+}
+
+

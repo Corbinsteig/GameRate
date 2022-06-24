@@ -1,0 +1,35 @@
+#post-form {
+    margin-bottom: 10px; 
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 15px;
+    top: 0;
+    position:sticky;
+    z-index: 9;
+    margin: 0 auto;
+    
+  }
+  
+  #post {
+    color: white;
+    position: fixed;
+    min-height: 150px;
+    background-color: lightgrey;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    
+  }
+
+  #postText{
+    border: 1px solid black;
+    text-align: center;
+    word-wrap: break-word;
+  }
