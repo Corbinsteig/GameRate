@@ -41,7 +41,7 @@ const Sidebar = () => {
               <CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
             </NavLink>
             <LoginButton/>
-            <LogoutButton/>
+            {/* <LogoutButton/> */}
           </CDBSidebarMenu>
         </CDBSidebarContent>
 
