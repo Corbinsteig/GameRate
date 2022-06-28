@@ -1,0 +1,18 @@
+.userName{
+    font-size: 60px;
+}
+
+.profilePageContainer{
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+}
+
+.bigPicture {
+    border-radius: 0%;
+    height: 200px;
+    width: 200px;
+}

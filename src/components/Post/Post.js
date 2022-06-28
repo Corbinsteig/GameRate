@@ -5,12 +5,11 @@ import axios from "axios";
 import "./Post.css";
 import { useAuth0 } from "@auth0/auth0-react";
 
-const defaultDate = new Date();
-
 const Post = () => {
   const [follow, setFollow] = useState([]);
   const [smPost, setSmPost] = useState([]);
   const { isAuthenticated } = useAuth0();
+
 
   const getPosts = () => {
     axios
@@ -18,7 +17,6 @@ const Post = () => {
       .then((res) => setSmPost(res.data));
   };
 
-  console.log(smPost);
 
   useEffect(() => {
     axios
@@ -30,7 +28,7 @@ const Post = () => {
   const formik = useFormik({
     initialValues: {
       text: "",
-      date: "",
+
     },
     onSubmit: async (values) => {
       axios
@@ -52,13 +50,6 @@ const Post = () => {
               onChange={formik.handleChange}
               value={formik.values.text}
               autocomplete="off"
-            ></input>
-
-            <input
-              name="date"
-              type="date"
-              onChange={formik.handleChange}
-              value={formik.values.date}
             ></input>
           </div>
           <button type="submit">Post</button>
