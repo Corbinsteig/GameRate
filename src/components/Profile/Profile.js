@@ -13,7 +13,7 @@ const Profile = () => {
     isAuthenticated && (
       <div className="position-absolute top-0 end-0" id="userProfile">
         <div className="userProfilePicture">
-        <img src={user.picture} alt={user.name} />
+        <img className="globalPicture" src={user.picture} alt={user.name} />
         </div>
         <h2>{user.name}</h2>
         <p>{user.email}</p>

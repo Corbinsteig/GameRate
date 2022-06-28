@@ -14,11 +14,11 @@ function App() {
       
     <Sidebar /> 
     <div className='App__content'>
+    <Profile />
     <Routes>
         <Route path='/' element={<Home/>} />
         <Route exact path='/profile' element={<Profilepage/>} />
     </Routes>
-    <Profile />
 
     </div>
     </Router>
