@@ -40,7 +40,6 @@ const Post = () => {
   if (isAuthenticated) {
     return (
       <div className="App__content">
-        <h1>Write Something</h1>
         <form onSubmit={formik.handleSubmit} id="post-form">
           <div id="input">
             <input
@@ -60,7 +59,14 @@ const Post = () => {
     );
   } else {
     return (
-        <h1>LOGIN REQUIRED</h1>
+      <div classname="App__content">  
+      <div className="loginContainer">
+        <div className="authenticationErrorText">
+        <h1 className="loginWarning">Authentication Error</h1>
+        <h2 className="loginReq">Login required</h2>
+        </div>
+      </div>
+      </div>
     )
   }
 };

@@ -3,8 +3,10 @@
 }
 
 #sideBar{
-    position: absolute;
-    height: 200%;
+    position: fixed;
+    height: 100%;
+    display: 'flex';
+    overflow: 'scroll initial';
 }
 
 

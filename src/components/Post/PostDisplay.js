@@ -5,12 +5,13 @@ import ProfileIcon from './ProfileIcon'
 
 
 
-
 const PostDisplay = (props) => {
     const today = new Date();
     const date = (today.getMonth() + 1) + '-'  + today.getDate() + '-' + today.getFullYear() ;
     const time = today.getHours() + ':' + today.getMinutes()
     const {smPost, setSmPost} = props
+
+    
 
   return (smPost.reverse().map((post, index) => (
     <section key={index} className='Post__parent'>
@@ -26,5 +27,6 @@ const PostDisplay = (props) => {
     </section>
   ))
 )}
+
 
 export default PostDisplay

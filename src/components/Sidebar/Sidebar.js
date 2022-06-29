@@ -5,7 +5,6 @@ import LoginButton from '../Login/Login';
 import {
   CDBSidebar,
   CDBSidebarContent,
-  CDBSidebarFooter,
   CDBSidebarHeader,
   CDBSidebarMenu,
   CDBSidebarMenuItem,
@@ -17,7 +16,7 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
 
     return (  
-    <div id='sideBar' style={{ display: 'flex', height: '200vh', overflow: 'scroll initial' }}>
+    <div id='sideBar'>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -44,16 +43,6 @@ const Sidebar = () => {
             {/* <LogoutButton/> */}
           </CDBSidebarMenu>
         </CDBSidebarContent>
-
-        <CDBSidebarFooter style={{ textAlign: 'center' }}>
-          <div
-            style={{
-              padding: '20px 5px',
-            }}
-          >
-            Sidebar Footer
-          </div>
-        </CDBSidebarFooter>
       </CDBSidebar>
     </div>
   );
