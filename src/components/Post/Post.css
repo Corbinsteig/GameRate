@@ -5,13 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: white;
     border-radius: 15px;
     top: 0;
     position:sticky;
     z-index: 9;
     margin: 0 auto;
-    
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
   }
   
   #post {
@@ -43,7 +44,7 @@
   border-radius: 5px;
   margin: 0 auto;
   
-  margin-left: 270px;
+  margin-left: 700px;
   padding: 10px 20px;
   box-sizing: border-box;
   position: relative;
@@ -63,6 +64,10 @@
     color: white;
   }
   
- 
+ #postButton{
+  background-color: #333;
+  color: lightblue;
+  width: 60px;
+ }
  
   

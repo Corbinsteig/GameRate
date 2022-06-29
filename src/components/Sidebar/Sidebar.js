@@ -18,7 +18,7 @@ const Sidebar = () => {
     return (  
     <div id='sideBar'>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
-        <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
+        <CDBSidebarHeader prefix={<i className="fa  fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
             GameRate
           </a>

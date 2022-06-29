@@ -51,7 +51,7 @@ const Post = () => {
               autocomplete="off"
             ></input>
           </div>
-          <button type="submit">Post</button>
+          <button id="postButton" type="submit">Post</button>
         </form>
         <PostDisplay smPost={smPost} setSmPost={setSmPost} />
         <getPosts />
