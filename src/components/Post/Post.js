@@ -40,6 +40,7 @@ const Post = () => {
   if (isAuthenticated) {
     return (
       <div className="App__content">
+        <header className="companyName">GameRate</header>
         <form onSubmit={formik.handleSubmit} id="post-form">
           <div id="input">
             <input
@@ -49,6 +50,7 @@ const Post = () => {
               onChange={formik.handleChange}
               value={formik.values.text}
               autocomplete="off"
+              rows="3"
             ></input>
           </div>
           <button id="postButton" type="submit">Post</button>
