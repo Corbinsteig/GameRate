@@ -22,6 +22,7 @@ app.get('/api/getFollow', async (req, res) => {
    res.status(200).send(allFollow[0]) 
 })
 
+
 app.post('/api/addPost', async (req, res) => {
     let {text} = req.body
     await sequelize.query(`
@@ -33,12 +34,22 @@ app.post('/api/addPost', async (req, res) => {
     `)
     res.status(200).send("Successfully Added Post!")
 })
-app.delete('/api/getAllPosts:id', async (req, res) => {
-    let deletePost = await sequelize.query(`
-     DELETE * from posts
-    `)
-    res.status(200).send(deletePost[0]) 
- })
 
+app.get('/api/getAllPosts/:id', async (req, res) => {
+    const { id } = req.params
+    let getPost = await sequelize.query(`
+     SELECT text FROM posts
+     WHERE "post_id"=${id}
+    `)
+    res.status(200).send(getPost) 
+ })
+app.delete('/api/getAllPosts/:id', async (req, res) => {
+    const { id } = req.params
+    let deletePost = await sequelize.query(`
+     DELETE FROM posts
+     WHERE "post_id"=${id}
+    `)
+    res.status(200).send(deletePost) 
+ })
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`))

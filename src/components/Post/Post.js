@@ -5,11 +5,14 @@ import axios from "axios";
 import "./Post.css";
 import { useAuth0 } from "@auth0/auth0-react";
 
+
+
+
 const Post = () => {
   const [follow, setFollow] = useState([]);
   const [smPost, setSmPost] = useState([]);
   const { isAuthenticated } = useAuth0();
-
+  
 
   const getPosts = () => {
     axios

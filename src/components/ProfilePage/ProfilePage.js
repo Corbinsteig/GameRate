@@ -4,9 +4,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 import './ProfilePage.css'
 import Followers from "../Followers/Followers";
 
-const ProfilePage = () => {
+
+const ProfilePage = (props) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [smFollow, smSetFollow] = useState([])
+  const {smPost, setSmPost} = props
 
   const getFollowers = () => {
     axios
@@ -35,6 +37,7 @@ const ProfilePage = () => {
         <p className="userEmail">{user.email}</p>
         <h1>Followers</h1>
         <Followers smFollow={smFollow} smSetFollow={smSetFollow}/>
+        
       </div>
       
     )
