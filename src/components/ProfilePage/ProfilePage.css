@@ -22,3 +22,14 @@
 .userEmail {
     font-weight: bold;
 }
+.followerUsername2 {
+    opacity: 1;
+    width: 100%;
+    height: 20px
+}
+
+.followersButton {
+background-color: #333333;
+  color: lightblue;
+  width: 80px;
+}
