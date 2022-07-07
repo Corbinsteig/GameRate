@@ -9,4 +9,24 @@
     overflow: 'scroll initial';
 }
 
+.head-div {
+    padding: 0px !important;
+}
 
+
+.companyLogo {
+    height: 9vh;
+    width: auto;
+    /* margin: 0 auto; */
+    padding-right: 0px;
+    margin-left: 5px;
+   }
+  
+   .companyName {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bolder;
+    color: lightblue;
+    margin-bottom: 10px;
+    margin-left: 10px;
+   }

@@ -11,7 +11,7 @@ const Followers = (props) => {
 
     return (smFollow.map((username, index) => (
       <section key={index}>
-        <span>{username.username}</span>
+        <span className="followersEmail">{username.username}</span>
       </section>
     )))
 }

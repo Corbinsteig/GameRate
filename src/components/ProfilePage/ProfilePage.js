@@ -5,11 +5,25 @@ import './ProfilePage.css'
 import Followers from "../Followers/Followers";
 
 
+// export const Bio = () => {
+//   const [message, setMessage] = useState("");
+//   return (
+//     <textarea 
+//       name="message"
+//       value={message} 
+//       onChange={e => setMessage(e.target.value)}>
+//     </textarea>
+//   )
+// }
+
+
+
 const ProfilePage = (props) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [smFollow, smSetFollow] = useState([])
   const {smPost, setSmPost} = props
   const [isShown, setIsShown] = useState(false)
+
 
   const handleClick = event => {
     setIsShown(current => !current)
@@ -32,11 +46,20 @@ const ProfilePage = (props) => {
     return (
     <div className="profilePageContainer">
       <div>
-      <img className="bigPicture" src={user.picture} alt={user.name} />
+      <img className="bigPicture" src={user.picture} alt="./photo.jpg" />
       </div>
       <h2 className="userName">{user.name}</h2>
       <p className="userEmail">{user.email}</p>
-      <button className="followersButton" onClick={handleClick}>Followers</button>
+      <h1 className="bio">Bio</h1>
+      <div class="form-group">
+    <label for="exampleFormControlTextarea1"></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" defaultValue=" My name is Corbin Steig and I am a 23 year old Web Developer who enjoys playing and rating videogames! Follow me for my takes">
+      
+    </textarea>
+    </div>
+   
+    
+      <button className="followersButton" onClick={handleClick}>followers</button>
       {isShown && (
       <Followers smFollow={smFollow} smSetFollow={smSetFollow}/>
       )}

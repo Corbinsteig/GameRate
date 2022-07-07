@@ -1,19 +1,20 @@
 #post-form {
-    margin-bottom: 10px; 
     width: 25vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #333;
     border-radius: 15px;
     top: 0;
     position:sticky;
     z-index: 9;
     margin: 0 auto;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 3px 0 lightblue, 0 2px 2px 0 lightblue,
+    0 0 2px 0 lightblue;
     border-radius: 5px;
     margin-bottom: 20px;
+    
   }
   
   #post {
@@ -21,8 +22,6 @@
     position: fixed;
     min-height: 150px;
     background-color: lightgrey;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
-    border-radius: 5px;
     margin-left: 20%;
     margin-bottom: 20px;
     padding: 10px 20px;
@@ -34,6 +33,7 @@
     border: 1px solid black;
     text-align: center;
     word-wrap: break-word;
+   
   }
 
   .loginContainer{
@@ -66,22 +66,31 @@
   }
   
  #postButton{
-  background-color: #333333;
+  background-color: #111;
   color: lightblue;
   width: 60px;
+  margin-left: 80px;
  }
 
- .companyLogo {
-  height: 9vh;
-  width: auto;
-  /* margin: 0 auto; */
-  padding-right: 0px;
+ #postButton:hover{
+  background-color: #555;
  }
 
- .companyName {
-  margin: 0 auto;
-  font-size: 30px;
-  font-weight: bolder;
+.mainLogo{
+  /* display: inline-block; */
+  height: 90px;
+}
+ header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
- 
-  
+  #root{
+    background-color: black;
+  }
+
+  input{
+    color: #333333;
+    background-color: lightblue;
+    margin-right: 10px;
+  }

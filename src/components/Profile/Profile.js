@@ -6,14 +6,14 @@ const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
-    return <div>Loading ...</div>;
+    return <div className="loading">Loading ...</div>;
   }
 
   return (
     isAuthenticated && (
       <div className="position-absolute top-0 end-0" id="userProfile">
         <div className="userProfilePicture">
-        <img className="globalPicture" src={user.picture} alt={user.name} />
+        <img className="globalPicture" src={user.picture} alt="" />
         </div>
         <h2>{user.name}</h2>
         <p>{user.email}</p>

@@ -43,7 +43,9 @@ const Post = () => {
   if (isAuthenticated) {
     return (
       <div className="App__content">
-        <header className="companyName">GameRate</header>
+        <header >
+        <img className="mainLogo" src="./GameRate_Logo.png"></img> 
+         </header>
         <form onSubmit={formik.handleSubmit} id="post-form">
           <div id="input">
             <input
@@ -56,7 +58,7 @@ const Post = () => {
               rows="3"
             ></input>
           </div>
-          <button id="postButton" type="submit">Post</button>
+          <button id="postButton" type="submit">post</button>
         </form>
         <PostDisplay smPost={smPost} setSmPost={setSmPost} />
         <getPosts />

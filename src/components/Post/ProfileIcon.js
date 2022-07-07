@@ -7,7 +7,7 @@ const ProfileIcon = () => {
   return (
     isAuthenticated && (
       <div className="Compose__profile-picture" id="userProfile">
-        <img className="tinyProfile" src={user.picture} alt={user.name} />
+        <img className="tinyProfile" src={user.picture} alt="" />
       </div>
       
     )

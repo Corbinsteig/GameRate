@@ -1,35 +1,64 @@
 .userName{
     font-size: 50px;
     font-weight: bolder;
+    color: lightblue;
 }
 
 .profilePageContainer{
-    margin-left: 610px;
+    margin-left: 510px;
     position:relative;
     clear:left;
     height:auto;
     z-index: 0;
     text-align:center;
-    width: 400px;
+    width: 600px;
+    background-color: #333;
+    border-radius: 25px;
 }
 
 .bigPicture {
     border-radius: 0%;
     height: 200px;
     width: 200px;
+    margin-top: 10px;
 }
 
 .userEmail {
     font-weight: bold;
+    color: lightblue;
 }
 .followerUsername2 {
     opacity: 1;
     width: 100%;
-    height: 20px
+    height: 20px;
+    color: lightblue
 }
 
 .followersButton {
-background-color: #333333;
+margin-top: 10px;
+background-color: #111;
   color: lightblue;
   width: 80px;
+  margin-bottom: 10px;
+}
+
+.followersButton:hover{
+    background-color: #555
+} 
+
+
+.bio {
+color: lightblue;
+}
+
+textarea {
+    background-color: lightblue;
+    color: #333;
+}
+
+.form-control{
+    color: black;
+    background-color: lightblue;
+    display: unset;
+    width: 90%;
 }

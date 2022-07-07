@@ -1,9 +1,9 @@
 .Post__parent {
   width: 100%;
   min-height: 150px;
-  background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12),
-    0 0 2px 0 rgba(0, 0, 0, 0.14);
+  background-color: #333;
+  box-shadow: 0 1px 3px 0 lightblue, 0 2px 2px 0 lightblue,
+    0 0 2px 0 lightblue;
   border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -21,10 +21,13 @@ h1 {
   min-height: 50px;
   box-sizing: border-box;
   padding: 10px;
+  color: lightblue;
 }
 
 .Post__date {
   font-size: 13px;
+  color: lightblue;
+  margin-left: 10px;
 }
 
 .Post__meta-data {
@@ -51,9 +54,11 @@ h1 {
 }
 
 #deleteButton {
-  margin-left: 75%;
+  margin-left: 735px;
   color: #add8e6;
-  background-color: #333;
+  background-color: #111;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #deleteButton:hover {

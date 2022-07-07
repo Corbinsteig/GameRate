@@ -20,7 +20,8 @@ const Sidebar = () => {
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa  fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
-            <img className="companyLogo" src="./GameRate_Logo.png"></img>  
+            <img className="companyLogo" src="./GameRate_Logo.png"></img> 
+             <h1 className='companyName'>GameRate</h1>
           </a>
         </CDBSidebarHeader>
 
